@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="29.07438">
+<testcase classname="Quandoo Assignment" name="Login Success" time="19.678051">
+<system-out><![CDATA[Given I navigated to "LoginPage" on "Mozilla"...............................passed
+And I enter "loginusername" as "tomsmith"...................................passed
+And I enter "loginpassword" as "SuperSecretPassword!".......................passed
+And I click on "loginButton"................................................passed
+Then Verify "message" contains "You logged into a secure area!".............passed
+]]></system-out>
+</testcase>
+<testcase classname="Quandoo Assignment" name="Login failure 1" time="2.005743">
+<system-out><![CDATA[Given I navigated to "LoginPage" on "Mozilla"...............................passed
+And I enter "loginusername" as "anything"...................................passed
+And I enter "loginpassword" as "SuperSecretPassword!".......................passed
+And I click on "loginButton"................................................passed
+Then Verify "message" contains "Your username is invalid!"..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Quandoo Assignment" name="Login failure 2" time="1.714771">
+<system-out><![CDATA[Given I navigated to "LoginPage" on "Mozilla"...............................passed
+And I enter "loginusername" as "tomsmith"...................................passed
+And I enter "loginpassword" as "anything"...................................passed
+And I click on "loginButton"................................................passed
+Then Verify "message" contains "Your password is invalid!"..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Quandoo Assignment" name="Hovers" time="1.215489">
+<system-out><![CDATA[Given I navigated to "HoverPage" on "Mozilla"...............................passed
+And I Hover over "Image1"...................................................passed
+Then Text "user1" should be present.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Quandoo Assignment" name="Hovers_2" time="1.138167">
+<system-out><![CDATA[Given I navigated to "HoverPage" on "Mozilla"...............................passed
+And I Hover over "Image2"...................................................passed
+Then Text "user2" should be present.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Quandoo Assignment" name="Hovers_3" time="0.868781">
+<system-out><![CDATA[Given I navigated to "HoverPage" on "Mozilla"...............................passed
+And I Hover over "Image3"...................................................passed
+Then Text "user3" should be present.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Quandoo Assignment" name="Sortable data table" time="2.453378">
+<system-out><![CDATA[Given I navigated to "DataTables" on "Mozilla"..............................passed
+When I click on "lastName"..................................................passed
+Then Verify the lastname are sorted in ascending order......................passed
+When I click on "lastName"..................................................passed
+Then Verify the lastname are sorted in descending order.....................passed
+]]></system-out>
+</testcase>
+</testsuite>
